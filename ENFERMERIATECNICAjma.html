@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENFERMERIA JMA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        nav {
+            background-color: #444;
+            padding: 10px;
+            text-align: center;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 5px;
+        }
+        nav a:hover {
+            background-color: #666;
+        }
+        section {
+            display: none;
+            padding: 40px;
+            margin-bottom: 40px;
+            background-color: #fff;
+            border-radius: 10px;
+        }
+        h1, h2 {
+            color: #333;
+            text-align: center;
+        }
+        p {
+            color: #666;
+            line-height: 1.6;
+        }
+        .welcome {
+            padding: 40px;
+            text-align: center;
+        }
+        .welcome h1 {
+            color: #fff; /* Cambio de color a blanco */
+        }
+        .welcome img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+    <script>
+        function showSection(sectionId) {
+            var sections = document.querySelectorAll('section');
+            sections.forEach(function(section) {
+                section.style.display = 'none';
+            });
+            var selectedSection = document.getElementById(sectionId);
+            selectedSection.style.display = 'block';
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="welcome">
+            <h1>¡Bienvenido a ENFERMERIA JMA!</h1>
+        </div>
+    </header>
+    <nav>
+        <a href="javascript:void(0)" onclick="showSection('bienvenida')">BIENVENIDA</a>
+        <a href="javascript:void(0)" onclick="showSection('alimentacion')">ALIMENTACIÓN SANA</a>
+        <a href="javascript:void(0)" onclick="showSection('lavado')">LAVADO DE MANOS</a>
+        <a href="javascript:void(0)" onclick="showSection('informacion')">INFORMACIÓN MÉDICA BÁSICA</a>
+        <a href="javascript:void(0)" onclick="showSection('primerosauxilios')">PRIMEROS AUXILIOS</a>
+        <a href="javascript:void(0)" onclick="showSection('habitossanos')">HÁBITOS SANOS</a>
+    </nav>
+    <section id="bienvenida" style="display: block;">
+        <div class="welcome">
+            <h2>¡Bienvenido a ENFERMERIA JMA!</h2>
+            <p>En esta página encontrarás información útil relacionada con la enfermería y el cuidado de la salud. Aquí puedes aprender sobre diversos temas, desde alimentación sana hasta hábitos saludables y primeros auxilios. Explora las secciones para obtener más detalles.</p>
+            <img src="https://cdn.euroinnova.edu.es/img/subidasEditor/tipos%20de%20cuidados%20de%20enfermeria-1614101864.webp" alt="Tipos de cuidados de enfermería">
+        </div>
+    </section>
+    <section id="alimentacion">
+        <h2>ALIMENTACIÓN SANA</h2>
+        <p>Una alimentación equilibrada es esencial para mantener una buena salud. Asegúrate de incluir una variedad de alimentos en tu dieta, como frutas, verduras, granos enteros, proteínas magras y grasas saludables. Evita los alimentos procesados y ricos en azúcares añadidos. Además, es importante controlar las porciones y comer con moderación.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/qo2evW8bmmM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    <section id="lavado">
+        <h2>LAVADO DE MANOS</h2>
+        <p>El lavado adecuado de manos es una de las medidas más efectivas para prevenir la propagación de enfermedades infecciosas. Lávate las manos con agua y jabón durante al menos 20 segundos, especialmente antes de comer, después de ir al baño y después de tocar superficies de alto contacto.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/PI9nhD2t6x4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    <section id="informacion">
+        <h2>INFORMACIÓN MÉDICA BÁSICA</h2>
+        <p>Es importante estar informado sobre temas médicos básicos para tomar decisiones saludables. Aprende sobre conceptos como presión arterial, colesterol, índice de masa corporal (IMC) y otros indicadores de salud. Conoce los valores normales y cómo interpretar los resultados de las pruebas médicas.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lZIgBFbgDK0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    <section id="primerosauxilios">
+        <h2>PRIMEROS AUXILIOS</h2>
+        <p>Los conocimientos básicos de primeros auxilios pueden marcar la diferencia en situaciones de emergencia. Aprende cómo actuar en casos de cortes, quemaduras, atragantamientos y otras emergencias médicas comunes. Conoce los pasos a seguir y las técnicas de primeros auxilios, como la RCP (reanimación cardiopulmonar) y el uso de un desfibrilador externo automático (DEA).</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/2VfLYaUx-mY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    <section id="habitossanos">
+        <h2>HÁBITOS SANOS</h2>
+        <p>Adoptar hábitos saludables es clave para mantener un estilo de vida saludable a largo plazo. Esto incluye hacer ejercicio regularmente, dormir lo suficiente, manejar el estrés, evitar el tabaco y moderar el consumo de alcohol. Intenta incorporar actividades físicas que disfrutes, como caminar, nadar, montar en bicicleta o practicar deportes.</p>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/fBG9UfsiOCY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
+    <footer>
+        <p>ENFERMERIA JMA - Todos los derechos reservados &copy; 2024</p>
+    </footer>
+</body>
+</html>
